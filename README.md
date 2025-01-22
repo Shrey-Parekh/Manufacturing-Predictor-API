@@ -52,7 +52,7 @@ curl -X POST http://localhost:8000/train
 - **Input:** JSON with Temperature and Run_Time values
 ```bash
 curl -X POST -H "Content-Type: application/json" \
-     -d '{"Temperature": 85, "Run_Time": 120}' \
+     -d '{"Temperature": 80, "Run_Time": 120}' \
      http://localhost:8000/predict
 ```
 
@@ -61,7 +61,7 @@ curl -X POST -H "Content-Type: application/json" \
 ### Training Response
 ```json
 {
-    "accuracy": 0.85,
+    "accuracy": 0.94,
     "f1_score": 0.83
 }
 ```
@@ -70,6 +70,6 @@ curl -X POST -H "Content-Type: application/json" \
 ```json
 {
     "Downtime": "Yes",
-    "Confidence": 0.85
+    "Confidence": 0.95
 }
 ```
